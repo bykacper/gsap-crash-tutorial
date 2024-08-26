@@ -28,7 +28,7 @@ const GsapTimeline = () => {
     });
 
     timeline.to("#yellow-box", {
-      x: 500,
+      x: 400,
       scale: 1,
       rotation: 360,
       borderRadius: "10px",
