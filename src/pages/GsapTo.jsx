@@ -6,6 +6,11 @@ const GsapTo = () => {
   useGSAP(() => {
     gsap.to("#blue-box", {
       x: 350,
+      repeat: -1,
+      yoyo: true,
+      rotation: 180,
+      duration: 2,
+      ease: "elastic",
     });
   }, []);
 
