@@ -1,5 +1,18 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const GsapFrom = () => {
   // TODO: Implement the gsap.from() method
+  useGSAP(() => {
+    gsap.from('#green-box', {
+      x: 250,
+      repeat: -1, 
+      yoyo: true, // wraz z właściwości repeat tworzy się animacja, kwadrat będzie cofał się do pierwotnego położenia i wykonywał animację od nowa
+      rotation: 360, // kwadrat będzie obracał się podczas animacji o 360 stopni
+      duration: 2, // czas trwania animacji będzie trwał 2 sekundy
+      ease: 'power1.out'
+    })
+  }, [])
 
   return (
     <main>
